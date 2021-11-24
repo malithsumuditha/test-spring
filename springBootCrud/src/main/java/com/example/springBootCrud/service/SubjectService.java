@@ -28,4 +28,8 @@ public class SubjectService {
         subjectRepo.save(subject);
 
     }
+
+    public void deleteSubject(String id) {
+        subjectRepo.deleteById(id);
+    }
 }

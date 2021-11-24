@@ -19,7 +19,7 @@ public class SubjectController {
         return subjectService.getAllSubjects();
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = "/subjects/")
+    @RequestMapping(method = RequestMethod.POST, value = "/subjects")
     public void addSubject(@RequestBody Subject subject){
 
         subjectService.addSubject(subject);
@@ -30,5 +30,10 @@ public class SubjectController {
 
         subjectService.updateSubject(subject);
     }
+
+    public void deleteSubject(@PathVariable String id){
+        subjectService.deleteSubject(id);
+    }
+
 
 }

@@ -10,11 +10,9 @@ public class Subject {
 
     @Id
     private String id;
-
     private String name;
 
     public Subject() {
-
     }
 
     public Subject(String id, String name) {
